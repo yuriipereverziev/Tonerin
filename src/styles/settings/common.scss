@@ -1,0 +1,192 @@
+body {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  overflow: hidden;
+}
+
+button {
+  display: block;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @include rm(480) {
+    width: 480px;
+  }
+
+  @include rm(640) {
+    width: 640px;
+  }
+
+  @include rm(768) {
+    width: 768px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  @include rm(1024) {
+    width: 1024px;
+  }
+
+  @include rm(1220) {
+    width: 1220px;
+  }
+}
+
+.title {
+  font-size: 26px;
+  color: $dark-grey;
+  font-weight: 800;
+  line-height: 1.2;
+  text-align: center;
+
+  @include rm(480) {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  @include rm(640) {
+    font-size: 34px;
+    line-height: 1;
+  }
+
+  @include rm(768) {
+    font-size: 38px;
+  }
+
+  @include rm(1024) {
+    font-size: 40px;
+  }
+
+  @include rm(1220) {
+    font-size: 48px;
+    line-height: 1.05;
+  }
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-black {
+  font-weight: 900;
+}
+
+.text-red {
+  color: red;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.blue {
+  color: $blue;
+}
+
+br {
+  line-height: 1;
+  font-size: 0;
+}
+
+.btn {
+  position: relative;
+  width: 100%;
+  max-width: 225px;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #ff4800;
+  border: 0;
+  border-radius: 50px;
+  cursor: pointer;
+
+
+  transition: all .3s ease;
+  padding: 10px 20px;
+  margin: 0 auto;
+
+  &:hover {
+    background: #c53b05;
+
+
+  }
+
+  &--small {
+    border-bottom: 2px solid $red;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &--big {
+    border-bottom: 5px solid $dark-orange;
+    font-size: 27px;
+    border-radius: 50px;
+    font-weight: 700;
+    line-height: 23px;
+    padding: 11px;
+
+    span {
+      font-size: 20px;
+      display: block;
+      font-weight: 500;
+      line-height: 19px;
+    }
+  }
+}
+
+.bg {
+  @include rm(1024) {
+    background-color: transparent;
+    background-image: url("../img/block-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.webp .bg {
+  @include rm(1024) {
+    background-image: url("../img/block-bg.webp");
+  }
+}
+.no-webp .bg {
+  @include rm(1024) {
+    background-image: url("../img/block-bg.jpg");
+  }
+}
+
+.line {
+  position: relative;
+}
+
+.prod-color {
+  color: #ffb400;
+}
+
+.bg {
+  background-color: #fbf7f3;
+}
