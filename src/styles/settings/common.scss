@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.2;
   overflow-x: hidden;
 }
@@ -159,25 +159,23 @@ br {
 }
 
 .bg {
-  @include rm(1024) {
-    background-color: transparent;
-    background-image: url("../img/block-bg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url("../img/bg.jpg");
     background-position: center;
-  }
+    background-attachment: fixed;
+
+    background-repeat: repeat;
 }
 
-.webp .bg {
-  @include rm(1024) {
-    background-image: url("../img/block-bg.webp");
-  }
-}
-.no-webp .bg {
-  @include rm(1024) {
-    background-image: url("../img/block-bg.jpg");
-  }
-}
+//.webp .bg {
+//  @include rm(1024) {
+//    background-image: url("../img/bg.webp");
+//  }
+//}
+//.no-webp .bg {
+//  @include rm(1024) {
+//    background-image: url("../img/bg.jpg");
+//  }
+//}
 
 .line {
   position: relative;
@@ -187,6 +185,6 @@ br {
   color: #ffb400;
 }
 
-.bg {
-  background-color: #fbf7f3;
-}
+//.bg {
+//  background-color: #fbf7f3;
+//}

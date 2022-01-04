@@ -1,0 +1,43 @@
+.item {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding-left: 60px;
+  min-height: 60px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 40px;
+    height: 40px;
+
+    background-size: 100%;
+  }
+}
+
+.item--drop::before {
+  background-image: url("../img/drop.svg");
+  background-size: 80%;
+}
+
+.item--heart::before {
+  left: 5px;
+  background-image: url("../img/heart.svg");
+}
+
+.item--energy::before {
+  background-image: url("../img/energy.svg");
+}
+
+.item--brain::before {
+  background-image: url("../img/brain.svg");
+
+
+}

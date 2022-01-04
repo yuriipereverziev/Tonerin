@@ -1,0 +1,33 @@
+section.promo.block
+    .container
+
+        h2.promo__title.title
+
+            picture
+                //source(type='image/webp' media='(min-width:1024px)' srcset='img/expert.webp')
+                source(media='(min-width:1024px)' srcset='img/logo.svg')
+                source(srcset='img/dot.png')
+                img(src="img/logo.svg", alt="logo")
+
+
+        span.promo__subtitle.subtitle давление будет в норме!
+
+        ul.promo__list.list
+
+            li.promo__item.item.item--heart Стабильное давление
+
+            li.promo__item.item.item--drop Нормальный уровень холестерина
+
+            li.promo__item.item.item--brain Ясная голова и хорошая память
+
+            li.promo__item.item.item--energy Энергия и жизненные силы
+
+
+        img.promo__product(src="img/product.png", alt="product")
+
+
+        .promo__form
+
+            .promo__form-title Только сегодня 21 декабря:
+
+            include form
