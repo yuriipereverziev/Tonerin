@@ -1,6 +1,7 @@
 import './helpers/postDate';
 import scrollSmooth from './helpers/smooth-scroll.js';
 import burger from './modules/burger-menu';
+import action from './modules/action';
 // import reviews from './modules/reviews';
 // import footer from './modules/footer';
 // import banner from './modules/banner';
@@ -9,6 +10,7 @@ import burger from './modules/burger-menu';
 function main() {
     scrollSmooth();
     burger();
+    action();
     // reviews()
     // footer();
     // banner();

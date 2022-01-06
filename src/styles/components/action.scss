@@ -1,0 +1,147 @@
+.action.block {
+  padding-top: 80px;
+  margin-top: -80px;
+  position: relative;
+  background: white;
+
+
+  @include rm(640) {
+    padding-top: 110px;
+    margin-top: -110px;
+  }
+  @include rm(768) {
+    padding-top: 120px;
+    margin-top: -80px;
+  }
+  @include rm(1024) {
+    padding-top: 160px;
+    margin-top: -115px;
+  }
+  @include rm(1220) {
+    padding-top: 200px;
+    margin-top: -135px;
+  }
+}
+
+.action-form .form-title {
+  @include rm(640) {
+    //margin-bottom: 10px;
+    margin-right: 20px;
+  }
+
+  @include rm(1024){
+    margin-right: 25px;
+    margin-bottom: 0;
+    text-align: left;
+    font-size: 24px;
+  }
+}
+//
+//.action-form mark {
+//  @include rm(1024){
+//    display: inline-block;
+//    text-align: left;
+//  }
+//}
+
+.form-title__text {
+  display: block;
+}
+.action-form {
+  @include rm(640) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @include rm(1024){
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
+}
+
+.action__price .x_price_current,
+.action__price .x_price_previous {
+  font-size: 28px;
+
+
+  @include rm(1024){
+    font-size: 40px;
+  }
+}
+
+.action__price .form__price-old::before {
+  background-color: #000;
+  top: -17px;
+  height: calc(100% + 29px);
+}
+
+.action__price .form__price-old,
+.action__price .form__price-new {
+  padding: 0;
+}
+
+.action__price .form__price-new {
+  margin-right: 10px;
+  padding-right: 10px;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    background: #c4c4c4;
+    width: 1px;
+    height: 20px;
+  }
+}
+
+.action__price {
+  margin-bottom: 20px;
+  text-align: center;
+
+  @include rm(1024){
+    margin-bottom: 0;
+    margin-right: 25px;
+  }
+}
+
+.action__wrapper .form__input {
+  @include rm(640){
+    width: 100%;
+  }
+
+  @include rm(1024){
+
+    //max-width: 195px;
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+}
+
+.action__wrapper {
+  max-width: 408px;
+  width: 100%;
+  margin: 0 auto;
+
+  @include rm(640){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 483px;
+  }
+
+  @include rm(1024){
+    max-width: 100%;
+    width: auto;
+    margin: 0;
+    flex-wrap: nowrap;
+    flex: auto;
+  }
+}
+
+.action__btn {
+  margin: 0;
+}

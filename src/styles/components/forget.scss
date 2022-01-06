@@ -40,10 +40,15 @@
 
 
 .forget__img {
+  position: relative;
+  z-index: 1;
+  max-width: 290px;
+  margin: 0 auto;
+
   @include rm(640){
     max-width: 450px;
     width: 100%;
-    margin: 0 auto;
+
   }
 
   @include rm(768){

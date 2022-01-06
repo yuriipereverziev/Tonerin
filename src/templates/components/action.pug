@@ -1,0 +1,28 @@
+.action.block
+    .container
+        form.x_order_form.action-form.form(action="/submit" method="post")
+
+            .form-title
+                span.form-title__text  Только сегодня&nbsp;
+                mark.date-0(data-format="dd monthFull")
+                |  :
+
+
+            .action__price
+                span.form__price-new
+                    span.x_price_current 39
+                    span.x_currency $
+                span.form__price-old
+                    span.x_price_previous 80
+                    span.x_currency $
+
+
+            .action__wrapper
+                input.form__input(placeholder='Имя' type='text' name='name' autocomplete='name' required)
+
+                input.form__input(placeholder='Мой телефон' type='tel' name='phone' autocomplete='tel' required)
+
+                button.btn.action__btn
+                    span.btn-text Заказать
+
+
