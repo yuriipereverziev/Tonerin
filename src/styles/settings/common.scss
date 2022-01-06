@@ -3,6 +3,7 @@ body {
   font-size: 18px;
   line-height: 1.2;
   overflow-x: hidden;
+  color: #444;
 }
 
 html {
@@ -110,27 +111,19 @@ br {
 }
 
 .btn {
-  position: relative;
   width: 100%;
-  max-width: 225px;
   font-family: inherit;
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 18px;
   color: #fff;
-  background-color: #ff4800;
+  background-color: #009fe3;
   border: 0;
-  border-radius: 50px;
   cursor: pointer;
-
-
   transition: all .3s ease;
   padding: 10px 20px;
   margin: 0 auto;
 
   &:hover {
     background: #c53b05;
-
-
   }
 
   &--small {
@@ -159,10 +152,10 @@ br {
 }
 
 .bg {
-    background-image: url("../img/bg.jpg");
+    //background-image: url("../img/bg.png");
+    background-image: url("../img/test2.png");
     background-position: center;
     background-attachment: fixed;
-
     background-repeat: repeat;
 }
 
@@ -185,6 +178,7 @@ br {
   color: #ffb400;
 }
 
-//.bg {
-//  background-color: #fbf7f3;
-//}
+mark {
+  background-color: transparent;
+  color: #009fe3;
+}

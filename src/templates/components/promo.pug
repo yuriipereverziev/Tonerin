@@ -1,33 +1,64 @@
 section.promo.block
     .container
 
-        h2.promo__title.title
+        .promo__wrapper
 
-            picture
-                //source(type='image/webp' media='(min-width:1024px)' srcset='img/expert.webp')
-                source(media='(min-width:1024px)' srcset='img/logo.svg')
-                source(srcset='img/dot.png')
-                img(src="img/logo.svg", alt="logo")
+            h2.promo__title.title
 
-
-        span.promo__subtitle.subtitle давление будет в норме!
-
-        ul.promo__list.list
-
-            li.promo__item.item.item--heart Стабильное давление
-
-            li.promo__item.item.item--drop Нормальный уровень холестерина
-
-            li.promo__item.item.item--brain Ясная голова и хорошая память
-
-            li.promo__item.item.item--energy Энергия и жизненные силы
+                picture
+                    //source(type='image/webp' media='(min-width:1024px)' srcset='img/expert.webp')
+                    //source(media='(min-width:1024px)' srcset='img/logo.svg')
+                    //source(srcset='img/dot.png')
+                    img(src="img/logo-black.png", alt="logo")
 
 
-        img.promo__product(src="img/product.png", alt="product")
+            span.promo__subtitle.subtitle давление будет в норме!
+
+            .promo__product__wrapper
+
+                ul.promo__list.list
+
+                    li.promo__item.item.item--heart Стабильное давление
+
+                    li.promo__item.item.item--drop Нормальный уровень холестерина
+
+                    li.promo__item.item.item--brain Ясная голова и хорошая память
+
+                    li.promo__item.item.item--energy Энергия и жизненные силы
 
 
-        .promo__form
+                img.promo__product(src="img/product.png", alt="product")
 
-            .promo__form-title Только сегодня 21 декабря:
 
-            include form
+            form.x_order_form.promo__form.form(action="/submit" method="post")
+
+                .form-title Только сегодня&nbsp;
+                    mark.date-0(data-format="dd monthFull")
+                    | :
+
+                .form__wrapper
+                    input.form__input(placeholder='Имя' type='text' name='name' autocomplete='name' required)
+
+                    input.form__input(placeholder='Мой телефон' type='tel' name='phone' autocomplete='tel' required)
+
+                    button.btn.form__btn
+                        span.btn-text Заказать
+
+
+                        span.form__price
+                            span.form__price-new
+                                span.x_price_current 39
+                                span.x_currency $
+                            span.form__price-old
+                                span.x_price_previous 80
+                                span.x_currency $
+
+
+
+        picture
+            //source(type='image/webp' media='(min-width:1024px)' srcset='img/expert.webp')
+            source(media='(min-width:1024px)' srcset='img/promo.png')
+            source(srcset='img/dot.png')
+            img.promo__decor(src="img/promo.png", alt="logo")
+
+

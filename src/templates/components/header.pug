@@ -6,7 +6,15 @@ header.header.bg
 
             ///h1 tonerin
 
-            img.header__logo(src="img/logo.svg", alt="logo")
+
+
+
+            picture
+                //source(type='image/webp' media='(min-width:1024px)' srcset='img/expert.webp')
+                source(media='(min-width:1024px)' srcset='img/dot.png')
+                img.header__logo(src="img/logo.svg", alt="logo")
+
+
 
 
             .burger
@@ -18,11 +26,16 @@ header.header.bg
 
             nav.header__nav.nav.bg
 
-
                 a.nav__link(href="#") О продукте
                 a.nav__link(href="#") Инновационный cостав
 
-                //img.nav__logo(src="img/logo.svg", alt="logo")
+
+
+                picture
+                    //source(type='image/webp' media='(min-width:1024px)' srcset='img/expert.webp')
+                    source(media='(min-width:1024px)' srcset='img/logo.svg')
+                    source(srcset='img/dot.png')
+                    img.nav__logo(src="img/logo.svg", alt="logo")
 
                 a.nav__link(href="#") Отзывы покупателей
                 a.nav__link(href="#") Как заказать

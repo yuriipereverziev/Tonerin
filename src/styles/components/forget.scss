@@ -1,0 +1,68 @@
+.forget {
+  position: relative;
+}
+
+.forget__title {
+  color: white;
+  margin-bottom: 20px;
+
+  @include rm(1024){
+    margin-bottom: 40px;
+  }
+}
+.forget__text {
+  color: white;
+
+  &:not(:last-of-type){
+    margin-bottom: 20px;
+  }
+}
+
+.forget__wrapper {
+  margin-bottom: 20px;
+
+  @include rm(768){
+    padding-left: 180px;
+    padding-bottom: 150px;
+    margin-bottom: 0;
+  }
+
+  @include rm(1024){
+    padding-left: 255px;
+    padding-bottom: 210px;
+  }
+  @include rm(1220){
+    padding-left: 335px;
+    padding-bottom: 260px;
+
+  }
+}
+
+
+.forget__img {
+  @include rm(640){
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  @include rm(768){
+    margin-left: 0;
+    position: absolute;
+    bottom: 0;
+  }
+
+  @include rm(1024){
+    max-width: 650px;
+  }
+
+  @include rm(1220){
+    max-width: 750px;
+  }
+
+}
+
+//.forget.bg {
+//  background-position: center bottom 78px;
+//  background-repeat: no-repeat;
+//}

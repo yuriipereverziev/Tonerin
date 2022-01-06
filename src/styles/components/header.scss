@@ -1,3 +1,40 @@
+.header .container {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+
+  @include rm(768){
+    width: 768px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  @include rm(1024){
+    width: 1024px;
+  }
+  @include rm(1220){
+    width: 1220px;
+  }
+}
+.header {
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  border-bottom: 2px solid white;
+
+  //@include rm(480) {
+  //  padding-left: 20px;
+  //  padding-right: 20px;
+  //}
+
+  @include rm(768){
+    position: static;
+    border-bottom: none;
+  }
+}
+
+
 .header__wrapper {
   width: 100%;
   display: flex;
@@ -15,34 +52,39 @@
   max-width: 180px;
 
   @include rm(768) {
+    max-width: 240px;
     margin-bottom: 20px;
+  }
+
+  @include rm(1024){
+    display: none;
   }
 }
 
 .header__nav {
-  //z-index: -1;
+  z-index: 1;
   width: 100%;
-  padding: 10px 15px;
-  //background: $white;
+  padding: 40px 15px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: fixed;
-  top: 50px;
+  top: 62px;
   right: 0;
+  height: 100vh;
   transform: translateX(100%);
   transition: all .8s;
 
   @include rm(480) {
-    flex-direction: row;
-    justify-content: center;
-    max-width: 100%;
-    transform: translateY(-100%);
+    max-width: 280px;
   }
-  @include rm(640) {
-    max-width: 100%;
-  }
+
+  //@include rm(640) {
+  //
+  //}
+
   @include rm(768) {
+    max-width: 100%;
     transform: translateY(0);
     position: static;
     background: transparent;
@@ -50,6 +92,7 @@
     z-index: 0;
     flex-direction: row;
     justify-content: space-around;
+    height: auto;
   }
 }
 
@@ -58,9 +101,9 @@
   transform: translateX(0);
   transition: all .5s;
 
-  @include rm(480) {
-    transform: translateY(0);
-  }
+  //@include rm(480) {
+  //  transform: translateY(0);
+  //}
 }
 
 .nav__link {
@@ -74,4 +117,15 @@
   @include rm(768) {
     width: auto;
   }
+}
+
+.nav__logo {
+  @include rm(1024){
+    max-width: 235px;
+  }
+}
+
+.form__price-new, .form__price-old {
+  padding-left: 3px;
+  padding-right: 3px;
 }

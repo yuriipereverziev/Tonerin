@@ -1,0 +1,103 @@
+
+.symptoms__title {
+  margin-bottom: 25px;
+  @include rm(480){
+    margin-bottom: 35px;
+  }
+
+  @include rm(640){
+    margin-bottom: 45px;
+  }
+
+  @include rm(768){
+    margin-bottom: 65px;
+  }
+
+  @include rm(1220){
+    margin-bottom: 70px;
+  }
+}
+
+.symptoms__title, .symptoms__list {
+  color: white;
+}
+
+.symptoms__list {
+  //padding-left: 23px;
+  margin: 0 auto 50px;
+  @include rm(640){
+    max-width: 540px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+
+  @include rm(768){
+    max-width: 100%;
+  }
+}
+
+.symptoms__item {
+  padding-left: 23px;
+  &:not(:last-of-type) {
+    margin-bottom: 15px;
+  }
+  &::before {
+    content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #f88; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 18px; /* Also needed for space (tweak if needed) */
+    margin-left: -18px; /* Also needed for space (tweak if needed) */
+  }
+
+  @include rm(640){
+    width: 48%;
+  }
+
+  @include rm(768){
+    width: 33%;
+  }
+  @include rm(1024){
+    width: 32%;
+  }
+
+}
+
+.symptoms__text {
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+}
+
+.symptoms__warning {
+  text-transform: uppercase;
+  max-width: 1095px;
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  background: white;
+  color: #333333;
+  margin: 0 auto;
+
+  @include rm(768){
+    font-size: 22px;
+  }
+
+  @include rm(1024){
+    font-size: 24px;
+  }
+
+  @include rm(1220){
+    font-size: 28px;
+  }
+}
+
+.symptoms__mark {
+  color: #ff8888;
+}
+
+.symptoms__arrow {
+  margin: 0 auto 20px;
+}
