@@ -1,7 +1,7 @@
 import './helpers/postDate';
 import scrollSmooth from './helpers/smooth-scroll.js';
 import burger from './modules/burger-menu';
-import action from './modules/action';
+import action from './modules/discount';
 // import reviews from './modules/reviews';
 // import footer from './modules/footer';
 // import banner from './modules/banner';

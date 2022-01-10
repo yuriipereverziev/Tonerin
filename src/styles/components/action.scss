@@ -45,7 +45,12 @@
 //}
 
 .form-title__text {
-  display: block;
+
+  @include rm(1024){
+    display: block;
+
+  }
+
 }
 .action-form {
   @include rm(640) {
@@ -61,52 +66,7 @@
   }
 }
 
-.action__price .x_price_current,
-.action__price .x_price_previous {
-  font-size: 28px;
 
-
-  @include rm(1024){
-    font-size: 40px;
-  }
-}
-
-.action__price .form__price-old::before {
-  background-color: #000;
-  top: -17px;
-  height: calc(100% + 29px);
-}
-
-.action__price .form__price-old,
-.action__price .form__price-new {
-  padding: 0;
-}
-
-.action__price .form__price-new {
-  margin-right: 10px;
-  padding-right: 10px;
-  position: relative;
-
-  &:before {
-    position: absolute;
-    content: "";
-    top: 0;
-    right: 0;
-    background: #c4c4c4;
-    width: 1px;
-    height: 20px;
-  }
-}
-
-.action__price {
-  margin-bottom: 20px;
-  text-align: center;
-
-  @include rm(1024){
-    margin-bottom: 0;
-    margin-right: 25px;
-  }
-}
 
 .action__wrapper .form__input {
   @include rm(640){

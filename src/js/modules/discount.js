@@ -1,6 +1,6 @@
 export default function () {
     function animateMarquee(el, duration) {
-        const innerEl = el.querySelector('.marquee__inner');
+        const innerEl = el.querySelector('.marquee__text');
         const innerWidth = innerEl.offsetWidth;
         const cloneEl = innerEl.cloneNode(true);
         el.appendChild(cloneEl);
